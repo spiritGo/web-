@@ -1,0 +1,42 @@
+图像：
+	语法：<img />
+属性：src="源，要显示的图像的路径，url"
+width：值（px）
+height:...
+alt:当图片加载失败时，提示图片的内容
+
+表格：table
+行：tr
+单元格：td
+1.表格的作用：
+	按照一定的格式来显示数据。表格是由单元格从左往右，从上往下的顺序排列的，表格的数据保存在单元格中
+2.使用表格
+	1.创建表格table
+	2.创建行hr
+	3.创建单元格td
+	
+3.表格的属性：
+	table属性：
+	1.width：单位px em
+	2.height：
+	3.border：border-collapse
+	4.align：设置表格的水平对齐方式 left right center
+	5.background-color：
+	6.bordercolor='red'
+	7.cellspacing='' 设置单元格的外边距（单元格和单元格的距离）
+	8.cellpadding 设置单元格的内边距 （单元格内容和边框之间的距离）
+
+	tr的属性：
+	1.align
+	2.valign 垂直对齐方式
+	3.width
+	4.height
+	5.background-color
+
+	td的属性：
+	1.align
+	2.valign
+	3.width
+	4.height
+	5.colspan 设置单元格跨列 colspan='数字'
+	6.rowspan 设置单元格跨行 
