@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style>
+	.img2 {
+		margin:0 auto;
+		transform:rotate(10deg);
+		display:block;
+		animation:anim-rotate 0.5s infinite;
+	}
+	
+	@keyframes anim-rotate {
+		10% {transform:rotate(36deg);}
+		20% {transform:rotate(72deg);}
+		30% {transform:rotate(108deg);}
+		40% {transform:rotate(144deg);}
+		50% {transform:rotate(180deg);}
+		60% {transform:rotate(216deg);}
+		70% {transform:rotate(252deg);}
+		80% {transform:rotate(288deg);}
+		90% {transform:rotate(324deg);}
+		100% {transform:rotate(360deg);}
+	}
+
+	@keyframes anim-alpha {
+		10% {background-color:white}
+		30% {background-color:#eeee0000}
+		40% {background-color:#ee00ee00}
+		70% {background-color:#ee0000ee}
+		80% {background-color:#eeeeee00}
+		100% {background-color:black}
+	}
+
+	.box1 {
+		width:200px;
+		height:300px;
+		animation:anim-alpha 2s infinite;
+	}
+  </style>
+
+ </head>
+ <body>
+  <div id='box'></div>
+
+  <script src="http://code.jquery.com/jquery-2.1.4.min.js">
+	$("#box").innerText = "div";
+  </script>
+
+  <ul type='square' style='background-color:lightblue'>
+	<li>
+		<ol>
+			<li>four</li>
+		</ol>
+	</li>
+	<li>
+		<ol type="A" start="8">
+			<li>one</li>
+		</ol>
+	</li>
+	<li>
+		<ol start="100">
+			<li>two</li>
+		</ol>
+	</li> 
+	<li>
+		<ol>
+			<li>three<img align="top" src='..\day03\images\1.jpg' /></li>
+		</ol>
+	</li>
+  </ul>
+
+
+  <img class='img2' src='..\day03\images\1.jpg'/>
+  <div class='box1'></div>
+ </body>
+</html>
