@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style>
+	* {
+		margin:0;
+		padding:0;
+	}
+
+	.body {
+		width:100%;
+		height:800px;
+		background:url("https://pan.baidu.com/static/images/16new/bg4.jpg") no-repeat center center;
+		background-size:100% 100%;
+	}
+
+	.nav {
+		padding:16px 10px;
+		position:relative;
+	}
+
+	.nav span {
+		position:absolute;
+		right:20px;
+	}
+
+	.nav span a {
+		margin:0 10px;
+		color:white;
+	}
+
+	.nav span a:nth-child(1) {
+		color:red;
+	}
+
+	.nav span a:nth-child(7) {
+		padding:6px;
+		background-color:red;
+		border-radius:10px;
+	}
+
+	.content {
+		position:relative;
+	}
+
+	.content .txt {
+		position:absolute;
+		color:white;
+		font-size:60px;
+		top:400px;
+		left:200px;
+	}
+
+	.content .login {
+		width:400px;
+		height:440px;
+		background-color:white;
+		position:absolute;
+		right:250px;
+		top:120px;
+		border-radius:6px;
+		text-align:center;
+	}
+
+	.form_nav a:nth-child(1) {
+		font-size:22px;
+		font-weight:bold;
+		position:absolute;
+		left:20px;
+		top:30px;
+	}
+
+	.form_nav a:nth-child(2) {
+		font-size:18px;
+		font-weight:bold;
+		position:absolute;
+		right:20px;
+		top:30px;
+		text-decoration:none;
+		color:blue;
+	}
+
+	.iptgroup {
+		position:absolute;
+		width:300px;
+		top:100px;
+		left:50px;
+		border:1px #eeeeeeee solid;
+	}
+
+	input {
+		outline:none;
+		font-size:16px;
+	}
+
+	.iptgroup input:nth-child(1) {
+		width:280px;
+		height:38px;
+		border-top:none;
+		border-left:none;
+		border-right:none;
+		padding-bottom:5px;
+	}
+
+	.iptgroup input:nth-child(2) {
+		width:280px;
+		border:none;
+	}
+
+	.cheackbox {
+		position:absolute;
+		top:220px;
+		left:50px;
+	}
+
+	.btn {
+		position:absolute;
+		top:280px;
+		left:50px;
+	}
+
+	.btn span {
+		width:300px;
+		padding:10px 0;
+		background-color:#3582f8;
+		border-radius:6px;
+		color:white;
+		display:block;
+	}
+
+	.phone {
+		width:300px;
+		position:absolute;
+		top:350px;
+		left:50px;
+	}
+
+	.phone a:nth-child(1) {
+		position:absolute;
+		left:10px;
+	}
+
+	.phone a:nth-child(2) {
+		position:absolute;
+		right:10px;
+	}
+
+	.foot {
+		width:400px;
+		position:absolute;
+		top:400px;
+		color:#3582f8;
+		background-color:lightblue;
+		padding:6px 0;
+		border-radius:6px;
+	}
+
+	.foot a:nth-child(1) {
+		left:50px;
+		position:absolute;
+
+	}
+
+	.foot a:nth-child(5) {
+		position:absolute;
+		right:50px;
+
+	}
+  </style>
+ </head>
+ <body>
+  <div class='body'>
+	<div class='nav'> 
+		<img src='https://pan.baidu.com/static/images/16new/logo.png'/>
+		<span>
+			<a>严打违规文件和盗版侵权传播</a>
+			<a>百度首页</a>
+			<a>客户端下载</a>
+			<a>官方贴吧</a>
+			<a>官方微博</a>
+			<a>问题反馈</a>
+			<a>会员中心</a>
+		</span>
+	</div>
+		
+	<div class='content'>
+		<span class='txt'>
+			<p>“安全存储</p>
+			<p>生活井井有条”</p>
+		</span>
+		<div class='login'>
+			<form>
+				<div class='form_nav'>
+					<a>账号密码登陆</a>
+					<a href>短信快捷登陆></a>
+				</div>
+				<div class='iptgroup'>
+					<span class='user'>
+						<input type='text' placeholder='手机/邮箱/用户名'/>
+					</span>
+					<span class='pwd'>
+						<input type='password' placeholder='密码'/>
+					</span>
+				</div>
+
+				<div class='cheackbox'>
+					<input type='checkbox' id='login'/><label for='login'>下次自动登录</label>
+				</div>
+
+				<div class='btn'>
+					<span>登陆</span>
+				</div>
+
+				<div class='phone'>
+					<a>忘记密码</a>
+					<a href='#'>海外手机号</a>
+				</div>
+
+				<div class='foot'>
+					<a>扫一扫登陆</a>
+					<img src='https://pan.baidu.com/static/images/16new/logo_sinaweibo.png' />
+					<img src='https://pan.baidu.com/static/images/16new/logo_qq.png' />
+					<img src='https://pan.baidu.com/static/images/16new/logo_wechat.png' />
+					<a>立即注册</a>
+				</div>
+			</form>
+		</div>
+	</div>
+  </div>
+
+  <div>
+	
+  </div>
+ </body>
+</html>

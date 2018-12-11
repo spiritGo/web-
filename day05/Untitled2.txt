@@ -1,0 +1,34 @@
+表格嵌套：
+	在单元格中嵌套一个表格：
+	<table>
+		<tr>
+			<td>
+				<table></table>
+			</td>
+		</tr>
+	</table>
+链接：
+	1作用：链接又称为超链接，设置页面中允许被点击的内容，在网页中允许完成页面间跳转动作
+	2语法：
+		标记：<a></a>
+		属性：
+			herf：链接的url
+			target:	_blank:打开新的页面
+					—seft:在自身的页面打开
+			title：鼠标放在链接上的提示
+	3.链接到锚点
+		1.作用：在页面中的某行处。做一个记号，方便跳转到标记位置
+		2.使用方式：
+			通过a标记的href跳转到本页的秒点处
+			某行位置处，需要设定一个id并且自定义锚点的名称
+表单：<form></from>
+	输入控件：<input></input>
+	属性：type 取值：button password text email phone checkbox(多选框) radio
+	placeholder="";
+	maxlength="";
+	min=''和max='';
+	<label></label>
+
+边距：margin and padding 分为内边距（padding）和外边距（margin）
+
+		
