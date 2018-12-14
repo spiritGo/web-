@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style>
+  </style>
+ </head>
+ <body>
+  <canvas id='canvas' width='500' height='500'></canvas>
+
+  <script>
+	var canvas = document.getElementById('canvas');
+	var paint = canvas.getContext('2d');
+	paint.fillStyle="#ff0000";
+	paint.fillRect(100,100,150,150);
+	paint.fillstyle='#00ff00';
+	paint.beginPath();
+	paint.arc(50,50,50,0,Math.PI*2,true);
+	
+	paint.closePath();
+	paint.fill();
+
+	paint.fillStyle='#ff0000';
+	paint.beginPath();
+	paint.arc(300,300,50,0,Math.PI*2,true);
+	paint.closePath();
+	paint.fill();
+  </script>
+ </body>
+</html>

@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style>
+	.bigCircle {
+		width:200px;
+		height:200px;
+		border-radius:50%;
+		border:1px solid black;
+		position:relative;
+		margin:0 auto;
+
+		animation:animate 1s linear infinite;
+	}
+
+	.topCircle,.bottomCircle,.topSmallCircle,.bottomSmallCircle {
+		position:absolute;
+		border-radius:50%;
+	}
+
+	.topCircle,.bottomCircle {
+		width:100px;
+		height:100px;
+		top:0;
+		left:50px;
+		z-index:10;
+		background-color:white;
+	}
+
+	.bottomCircle {
+		background-color:black;
+		top:100px;
+	}
+
+	.topSmallCircle,.bottomSmallCircle {
+		width:20px;
+		height:20px;
+		top:40px;
+		left:90px;
+		background-color:black;
+		z-index:20;
+	}
+
+	.bottomSmallCircle {
+		top:140px;
+		background-color:white;
+	}
+
+	.left,.right {
+		width:100px;
+		height:200px;
+	}
+
+	.left {
+		background-color:black;
+		border-bottom-left-radius:100px;
+		border-top-left-radius:100px;
+	}
+
+	.right {
+		top:0;
+		right:0;
+		border-bottom-right-radius:100px;
+		border-top-right-radius:100px;
+	}
+
+	@keyframes animate {
+		from {
+			transform:rotate(360deg);
+		}
+
+		to {
+			transform:rotate(0deg);
+		}
+	}
+
+
+	
+  </style>
+ </head>
+ <body>
+  <div class='bigCircle'>
+  	<div class='left'></div>
+	<div class='right'></div>
+	<div class='topCircle'></div>
+	<div class='topSmallCircle'></div>
+	<div class='bottomCircle'></div>
+	<div class='bottomSmallCircle'></div>
+  </div>
+ </body>
+</html>
