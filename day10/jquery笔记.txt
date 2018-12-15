@@ -1,0 +1,35 @@
+
+入口函数：
+	1. $(document).ready(function(){});
+	2. $(function(){});
+
+事件：点击事件
+	单击 $(selector).click(function(){});
+	双击 $(selector).dblclick(function(){});
+
+显示隐藏：
+	$(selector).hide(time,callback);	隐藏
+	$(selector).show(time,callback);	显示
+	$(selector).toggle(time,callback);	如果隐藏则显示，否则隐藏
+
+淡入淡出：
+	$(selector).fadeIn(time,callback);		淡入
+	$(selector).fadeOut(time,callback);		淡出	
+	$(selector).fadeToggle(time,callback);	如果淡入，则淡出，否则淡入
+	$(selector).fadeTo(time,opcity,callback);把标签的透明度调到一个值
+
+滑动：
+	$(selector).slideDown(speed,callback);		向下滑动
+	$(selector).slideUp(speed,callback);		向上滑动
+	$(selector).slideToggle(speed,callback);	如果向下滑动，则向上滑动，否则向上滑动
+
+动画：
+	$(selector).animate({params},speed,callback); 
+		eg: $(selector).animate({left:"250px",top:"250px"},1000,function(){});
+		$("button").click(function(){
+		  var div=$("div");
+		  div.animate({height:'300px',opacity:'0.4'},"slow");
+		  div.animate({width:'300px',opacity:'0.8'},"slow");
+		  div.animate({height:'100px',opacity:'0.4'},"slow");
+		  div.animate({width:'100px',opacity:'0.8'},"slow");
+		});

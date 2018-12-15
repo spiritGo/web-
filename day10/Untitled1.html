@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+	<div class='test'></div>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+	<script>
+		$(function(){
+			var $test = $(".test");
+			$test.css("width","200px");
+			$test.css("height","200px");
+			$test.css("backgroundColor","red");
+			$test.click(function(){
+				$(this).hide(1000,function(){
+					$(this).css("width","50px");
+					$(this).css("height","50px");
+					$(this).css("backgroundColor","lightblue");
+					$(this).show(1000);
+					$(this).css("borderRadius","50%");
+				});
+			});
+		})
+	</script>
+ </body>
+</html>
