@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style>
+	body {
+		background-color:black;
+		perspective:800px;
+	}
+
+	.cubic > div > div {
+		float: left;
+		width: 64px;
+		height: 64px;
+		border: 1.3333333333333px solid #fff;
+	}
+
+	.cubic {
+		position:relative;
+		width:206px;
+		height:206px;
+		transform:rotateX(30deg) rotateY(60deg);
+		transform-style:preserve-3d;
+		margin:200px auto 0;
+		animation:myfirst 5s infinite linear running;
+		/* backface-visibility:hidden; */
+	}
+
+	.cubic:hover {
+		animation:myfirst 18s infinite linear paused;
+	}
+
+	.cubic > div {
+		width:200px;
+		height:200px;
+		border:3px solid #fff;
+		position:absolute;
+		opacity:.1;
+		
+	}
+
+	.front {
+		transform:translateZ(100px);
+		background-color:#ffff00cc;
+	}
+
+	.behind {
+		transform:translateZ(-100px);
+		background-color:#ff0000cc;
+	}
+	
+	.left {
+		transform:rotateY(90deg) translateZ(100px);
+		background-color:#ff8000e0;
+	}
+
+	.right {
+		background-color:#00ff40cc;
+		transform:rotateY(90deg) translateZ(-100px);
+	}
+
+	.top {
+		background-color:#6a117be3;
+		transform:rotateX(90deg) translateZ(100px);
+	}
+
+	.bottom {
+		background-color:#0080ffcc;
+		transform:rotateX(90deg) translateZ(-100px);
+	}
+
+	/* @keyframes myfirst {
+		from {
+			transform:rotateY(0deg) rotateX(0deg) rotateZ(0deg);
+	
+		}
+	
+		to {
+			transform:rotateY(360deg) rotateX(360deg) rotateZ(360deg);
+		}
+	} */
+
+	@keyframes myfirst {
+		from {
+			transform:rotate3d(0,0,0,0deg);
+	
+		}
+	
+		to {
+			transform:rotate3d(200,200,200,360deg);
+		}
+	}
+
+	.ball {
+		width:200px;
+		height:200px;
+		background-color:red;
+		animation:ball .1s infinite linear;
+		border-radius:50%;
+	
+	}
+	
+	@keyframes ball {
+		from {
+			transform:rotate3d(0,0,0,0deg);
+			background-color:red;
+		}
+	
+		to {
+			transform:rotate3d(1,1,1,360deg);
+			background-color:blue;
+		}
+	}
+  </style>
+ </head>
+ <body>
+	<div class='cubic'>
+		<div class='ball'></div>
+		<div class='left'>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+		<div class='right'>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+		<div class='top'>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+		<div class='bottom'>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+		<div class='front'>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+		<div class='behind'>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+	</div>
+ </body>
+</html>

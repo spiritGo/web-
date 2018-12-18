@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style>
+	.container {
+		perspective: 20px;
+		position: relative;
+		width: 200px;
+		height: 200px;
+		background-color: black;
+		opacity: 0.6;
+		border-radius: 50%;
+		margin: 0 auto;
+		transform: rotateX(106deg);
+	}
+
+	.inner_11,.inner_12 {
+		width: 150px;
+		height: 150px;
+		background-color: red;
+		opacity: 0.6;
+		border-radius: 50%;
+		margin: auto;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		transform: translate3d(0,109px,0);
+		
+	}
+
+	.inner_12 {
+		transform: translate3d(0,-109px,0);
+	}
+  </style>
+ </head>
+ <body>
+  <div>
+	<div class='container'>
+		<div class='inner_1'>
+			<div class='inner_11'></div>
+			<div class='inner_12'></div>
+		</div>
+	</div>
+  </div>
+ </body>
+</html>
