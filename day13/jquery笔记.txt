@@ -1,0 +1,27 @@
+jquery遍历元素：
+	祖先：
+
+	parent(选择器);		返回被选元素的直接父元素
+	parents(选择器);	返回被选元素的所有祖先元素
+	parentsUntil(选择器);	返回介于给定的两个元素之间的所有元素
+
+	eg:	$(document).ready(function(){
+		  $("span").parentsUntil("div");
+		});
+
+	后代：
+
+	children(选择器):	返回被选元素的所有直接子元素
+	find(选择器):		返回被选元素的所有后代
+	
+	同胞；
+
+	siblings(选择器);	返回被选元素的所有同胞元素
+	next(选择器);		返回被选元素的下一个同胞元素
+	nextAll(选择器);	返回被选元素的所有跟随的同胞元素
+	nextUntil(选择器);	返回介于两个给定元素的所有跟随的同胞元素
+	prev(选择器);		略
+	prevAll(选择器);	略
+	prevUntil(选择器);	略
+
+

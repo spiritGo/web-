@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style>
+	.body {
+		perspective:800px;
+		perspective-origin:50% 50%;
+		
+	}
+
+	.container {
+		width:600px;
+		height:600px;
+		/* background-color:black; */
+		/* opacity:.6; */
+		margin:50px auto;
+		transform:rotateX(60deg) rotateY(30deg);
+		transform-style:preserve-3d;
+		position:relative;
+		animation:containerAnim 6s linear infinite;
+
+	}
+
+	@keyframes containerAnim {
+		from {
+			transform:rotateX(60deg) rotateY(0deg);
+		}
+
+		to {
+			transform:rotateX(60deg) rotateY(360deg);
+		}
+	}
+
+
+	.container div:nth-child(-n+6) {
+		width:100px;
+		height:100px;
+		background-color:red;
+		opacity:.9;
+		position:absolute;
+		top:250px;
+		left:250px;
+		border-radius:50%;
+		
+	}
+
+	.container div:nth-child(n+7):nth-child(-n+12) {
+		background-color:blue;
+		opacity:.6;
+		width:160px;
+		height:160px;
+		border-radius:50%;
+		position:absolute;
+		left:220px;
+		top:220px;
+
+	}
+ 
+	.container div:nth-child(1) {
+		transform:translateZ(100px);
+	}
+
+	.container div:nth-child(2) {
+		transform:translateZ(-100px);
+	}
+
+	.container div:nth-child(3) {
+		transform:rotateX(90deg) translateZ(100px);
+	}
+
+	.container div:nth-child(4) {
+		transform:rotateX(90deg) translateZ(-100px);
+	}
+
+	.container div:nth-child(5) {
+		transform:rotateY(90deg) translateZ(100px);
+	}
+
+	.container div:nth-child(6) {
+		transform:rotateY(90deg) translateZ(-100px);
+	}
+
+	.container div:nth-child(7) {
+		transform:translateZ(200px);
+	}
+
+	.container div:nth-child(8) {
+		transform:translateZ(-200px);
+	}
+
+	.container div:nth-child(9) {
+		transform:rotateX(90deg) translateZ(200px);
+	}
+
+	.container div:nth-child(10) {
+		transform:rotateX(-90deg) translateZ(200px);
+	}
+
+	.container div:nth-child(11) {
+		transform:rotateY(90deg) translateZ(200px);
+	}
+
+	.container div:nth-child(12) {
+		transform:rotateY(-90deg) translateZ(200px);
+	}
+
+  </style>
+ </head>
+ <body>
+  <div class='container'>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+
+  </div>
+ </body>
+</html>

@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style>
+	* {
+		margin:0;
+		padding:0;
+	}
+
+	.nav {
+		padding:10px 20px;
+	}
+
+	a {
+		text-decoration:none;
+		color:black;
+
+	}
+
+	.nav > a{
+		width:150px;
+		height:43px;
+		background:url(http://static.nipic.com/images/soso.png) -206px 0 no-repeat;
+		display:inline-block;
+		vertical-align:middle;
+
+	}
+
+	.nav > span:nth-child(2) {
+		margin:0 80px;
+	}
+
+	.nav > span > a {
+		margin:0 20px;
+		
+	}
+
+	.nav > span > a:hover {
+		color:#1ebcf0;
+	}
+
+	.nav > span > a:nth-child(1) {
+		color:#1ebcf0;
+		
+	}
+
+	.nav > span:nth-child(3) {
+		margin-left:400px;
+	}
+
+	.nav > span:nth-child(3) > a {
+		border:1px #1ebcf0 solid;
+		width:100px;
+		height:45px;
+		display:inline-block;
+		border-radius:8px;
+		line-height:45px;
+		text-align:center;
+		margin:0;
+	}
+
+	.nav > span:nth-child(3) > a:nth-child(1) {
+		background-color:#1ebcf0;
+		color:white;
+	}
+
+	.nav > span:nth-child(3) > a:nth-child(2):hover {
+		background-color:#1ebcf0;
+		color:white;
+	}
+
+	.searchBox {
+		width:100%;
+		height:482px;
+		background:url(http://icon.nipic.com/BannerPic/20181217/home/20181217101816.jpg);
+		
+	}
+
+	.searchBox form {
+		text-align:center;
+		/* height:50px; */
+		position:relative;
+		top:216px;
+		border:3px solid #00000069;
+		/* width:707px; */
+		border-radius:2px;
+		/* margin:0 auto; */
+		left:50%;
+		display:inline-block;
+		transform:translateX(-50%);
+	}
+
+	input {
+		border:none;
+		outline:none;
+	}
+
+	.searchBox input[type='text'] {
+		width:570px;
+		height:49px;
+		padding:0 20px;
+		font-size:14px;
+		background:#ffffffc9;
+		color:black;
+		
+	}
+
+	.searchBox input[type='text']:focus {
+		background:#ffffff;
+	}
+	
+	.searchBox input[type='button'] {
+		width:97px;
+		height:51px;
+		vertical-align:middle;
+		background:url(http://static.nipic.com/images/newIndex-searchBtn.png?v=20171127);
+		/* margin-top: -5px; */
+	}
+
+	.ad {
+		width:100%;
+		text-align:center;
+		padding:50px 0;
+
+	}
+
+	.ad > a {
+		width:290px
+		height:200px;
+		position:relative;
+		display:inline-block;
+		margin:0 10px;
+	}
+
+	.ad > a > span {
+		position:absolute;
+		bottom:0px;
+		text-align:center;
+		width:290px;
+		left:0px;
+		background-color:black;
+		opacity:.6;
+		color:white;
+		padding:10px 0;
+		display:none;
+	} 
+
+	.ad > a:hover span {
+		display:block;
+	}
+
+	.ad-foot {
+		padding:10px 0;
+		text-align:center;
+	}
+
+	.ad-foot a {
+		width:122px;
+		height:36px;
+		border:1px grey solid;
+		display:inline-block;
+		margin:0 20px;
+		line-height:36px;
+	}
+
+	.ad-foot a:hover {
+		color:#31ccff;
+	}
+  </style>
+ </head>
+ <body>
+  <div class='container'>
+	<div class='nav'>
+		<a href="#"></a>
+		<span>
+			<a href="#">首页</a>
+			<a href="#">设计</a>
+			<a href="#">摄影</a>
+			<a href="#">多媒体</a>
+			<a href="#">原创交易</a>
+			<a href="#">求图求助</a>
+		</span>
+		<span>
+			<a href="#">登录</a>
+			<a href="#">注册</a>
+		</span>
+	</div>     
+	<div class='searchBox'>
+		<form>
+			<input type='text' placeholder='请输入标题、关键词、作品编号搜索' onBlur="placeholder='请输入标题、关键词、作品编号搜索'" onFocus="placeholder=''"/><input type='button'/>
+		</form>
+	</div>
+	<div class='ad'>
+		<a href="#">
+			<img src='http://icon.nipic.com/BannerPic/20181217/original/20181217101944_1.jpg'/>
+			<span>元旦</span>
+		</a>
+
+		<a href="#">
+			<img src='http://icon.nipic.com/BannerPic/20181217/original/20181217102040_1.jpg'/>
+			<span href='#'>2019年台历</span>
+		</a>
+		
+		<a href="#">
+			<img src='http://icon.nipic.com/BannerPic/20181217/original/20181217102146_1.jpg'/>
+			<span href='#'>旅游</span>
+		</a>
+		
+		<a href="#">
+			<img src='http://icon.nipic.com/BannerPic/20181210/original/20181210111658_1.jpg'/>
+			<span href='#'>圣诞节</span>
+		</a>
+
+		<div class='ad-foot'>
+			<a href='#'>星空</a>
+			<a href='#'>打折促销海报</a>
+			<a href='#'>美食海报</a>
+			<a href='#'>旅游海报</a>
+			<a href='#'>招生海报</a>
+			<a href='#'>招聘海报</a>
+			<a href='#'>最新图片</a>
+			<a href='#'>查看更多>></a>
+		</div>
+
+	</div>
+  </div>
+ </body>
+</html>

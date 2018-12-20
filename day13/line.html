@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+  <script src='../three.js'></script>
+  <script>
+
+	/*
+	思路分析：线
+	1.渲染器renderer
+	2.相机camera
+	3.场景scene
+		把相机拍到的场景交给渲染器渲染
+	*/
+
+  	/*var renderer = new THREE.WebGLRenderer();
+	renderer.setSize(window.innerWidth,window.innerHeight);
+	document.body.appendChild(renderer.domElement);
+
+	var camera = new THREE.PerspectiveCamera(45,window.innerWidth/window.innerHeight,1,500);
+	camera.position.set(0,0,100);
+	camera.lookAt(0,0,0);
+
+    var scene = new THREE.Scene();
+	var material = new THREE.LineBasicMaterial( { color: 0x0000ff } );
+	var geometry = new THREE.Geometry();
+	geometry.vertices.push(new THREE.Vector3( -10, 0, 0) );
+	geometry.vertices.push(new THREE.Vector3( 0, 10, 0) );
+	geometry.vertices.push(new THREE.Vector3( 10, 0, 0) );
+	geometry.vertices.push(new THREE.Vector3(20,20,20));
+	geometry.vertices.push(new THREE.Vector3(30,30,30));
+	geometry.vertices.push(new THREE.Vector3(40,-40,40));
+	geometry.vertices.push(new THREE.Vector3(50,50,50));
+	geometry.vertices.push(new THREE.Vector3(60,20,60));
+	var line = new THREE.Line( geometry, material );
+	scene.add( line ); 
+	renderer.render( scene, camera );*/
+
+	var loader = new THREE.FontLoader();
+
+	loader.load( 'fonts/helvetiker_regular.typeface.json', function ( font ) {
+
+		var geometry = new THREE.TextGeometry( 'Hello three.js!', {
+			font: font,
+			size: 80,
+			height: 5,
+			curveSegments: 12,
+			bevelEnabled: true,
+			bevelThickness: 10,
+			bevelSize: 8,
+			bevelSegments: 5
+		} );
+	} );
+
+  </script>
+ </body>
+</html>

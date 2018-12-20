@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style>
+	ul {
+		list-style:none;
+		width:202px;
+	}
+
+	ul>li>span {
+		width:200px;
+		padding:10px 0;
+		text-align:center;
+		border:1px solid black;
+		display:block;
+	}
+
+	ul>li>div {
+		width:200px;
+		height:200px;
+		border:1px solid red;
+		display:none;
+	}
+  </style>
+ </head>
+ <body>
+  <ul>
+	<li>
+		<span>1</span>
+		<div>div1</div>
+	</li>
+	<li>
+		<span>2</span>
+		<div>div2</div>
+	</li>
+	<li>
+		<span>3</span>
+		<div>div3</div>
+	</li>
+	<li>
+		<span>4</span>
+		<div>div4</div>
+	</li>
+	<li>
+		<span>4</span>
+		<div>div4</div>
+	</li>
+	<li>
+		<span>4</span>
+		<div>div4</div>
+	</li>
+	<li>
+		<span>4</span>
+		<div>div4</div>
+	</li>
+	<li>
+		<span>4</span>
+		<div>div4</div>
+	</li>
+	<li>
+		<span>4</span>
+		<div>div4</div>
+	</li>
+	<li>
+		<span>4</span>
+		<div>div4</div>
+	</li>
+	<li>
+		<span>4</span>
+		<div>div4</div>
+	</li>
+	<li>
+		<span>4</span>
+		<div>div4</div>
+	</li>
+  </ul>
+  <script src='..\jquery-3.2.1\jquery-3.2.1.js'></script>
+  <script>
+	$(function(){
+		$("ul>li>span").mouseover(function(){
+			$(this).next().slideDown(200).parent().siblings().find("div").slideUp(200)
+		});
+
+		$("ul").mouseleave(function(){
+			$(this).children().children("div").slideUp();
+		});
+	});
+  </script>
+ </body>
+</html>
