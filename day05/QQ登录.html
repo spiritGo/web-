@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style>
+	.box {
+		width:412px;
+		margin:0 auto;
+	}
+
+  .form {
+  	text-align:center;
+  }
+
+  .nav {
+	font-size:20px;
+	font-weight:bold;
+	margin:10px 0;
+  }
+
+  .nav a {
+	text-decoration:none;
+	margin-left:100px;
+  }
+
+  input {
+	border-radius:4px;
+	margin:12px 0;
+	width:400px;
+	height:30px;
+	padding-left:6px;
+	border:2px grey solid;
+  }
+
+  .button input{
+	background-color:blue;
+	color:white;
+	width:412px;
+	height:42px;
+	border:none;
+  }
+
+  .check{
+	text-align:left;
+  }
+
+  .check input[type=checkbox] {
+	width:20px;
+	height:20px;
+	/* display: inline-block; */
+	vertical-align:middle;
+  }
+
+  .check label {
+	height:20px;
+  }
+
+  .phone input{
+	width:312px;
+  }
+
+  .phone select{
+	width:84px;
+	height:35px;
+	border:2px grey solid;
+	border-radius:4px;
+  }
+  </style>
+ </head>
+ <body>
+  <div class="box">
+	<form class='form'>
+		<div class='nav'>
+			<span>每一天，乐在沟通</span>
+			<a href='#'>免费靓号</a>
+		</div>
+		<div>
+			<input placeholder='昵称'/>
+		</div>
+		<div>
+			<input placeholder='密码'/>
+		</div>
+		<div class="phone">
+			<select>
+				<option>+86</option>
+			</select>
+			<input placeholder='手机号码'/>
+		</div>
+		<div class='button'>
+			<input type='button' value='立即注册'/>
+		</div>
+
+		<div class='check'>
+			<input type='checkbox' id='ipt1' checked/><label for='ipt1'>同时开通QQ空间</label>
+		</div>
+		<div class='check'>
+			<input type='checkbox' id='ipt2'/><label for='ipt2'>我一阅读并同意相关服务条款和隐私政策</label>
+		</div>
+  </form>
+  </div>
+ </body>
+</html>

@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style>
+	html,body {
+		height:100%;
+	
+	}
+
+
+	/* 有问题 */
+	body {
+		perspective:40em;
+		perspective-origin:center center;
+		overflow: hidden;
+		font-size: 14px;
+		background: #000;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		  justify-content: center;
+		  -webkit-box-align: center;
+			  -ms-flex-align: center;
+				  align-items: center;
+	}
+
+	.container {
+		width:10em;
+		height:10em;
+		transform-style:preserve-3d;
+		animation:rotate 12s linear infinite;
+	}
+	
+	.cub {
+		position:absolute;
+		width:10em;
+		height:10em;
+		transform-style:preserve-3d;
+	}
+
+	.cub2 {
+		transform:rotateX(45deg) rotateY(45deg);
+	}
+
+	.cub3 {
+		transform:rotateX(45deg) rotateZ(45deg);
+	}
+
+	.side {
+		position:absolute;
+		width:10em;
+		height:10em;
+		transform-style:preserve-3d;
+		border-radius:50%;
+		border:2px dotted rgba(255, 213, 0, 0.35);
+		transform:rotateY(180deg);
+	}
+
+	.side::before, .side::after{
+		content:"";
+		display:block;
+		position:absolute;
+		top:0;
+		right:0;
+		bottom:0;
+		left:0;
+		box-shadow:inset 0 0 2em,0 0 2em;
+		margin:auto;
+		border-radius:inherit;
+		box-sizing:border-box;
+		border:1px solid;
+	}
+
+	.side::before {
+		width:2.5em;
+		height:2.5em;
+		color:gold;
+	}
+
+	.side::after {
+		width:1.5em;
+		height:1.5em;
+		color:teal;
+		box-shadow:inset 0 0 1em,0 0 1em;
+		transform:translateZ(-2em);
+	}
+
+	.side-back {
+		transform:rotateY(180deg) translateZ(5em);
+	}
+
+	.side-front {
+		transform:translateZ(5em);
+	}
+
+	.side-left {
+		transform:translateX(-5em) rotateY(-90deg);
+	}
+
+	.side-right {
+		transform:translateX(5em) rotateY(90deg);
+	}
+
+	.side-top {
+		transform:translateY(-5em) rotateX(90deg);
+	}
+
+	.side-bottom {
+		transform:translateY(5em) rotateX(-90deg);
+	}
+
+	.side_inner {
+		width:5em;
+		height:5em;
+		position:absolute;
+		top:0;
+		right:0;
+		left:0;
+		bottom:0em;
+		margin:auto;
+		border-radius:inherit;
+		border:1px solid;
+		color:orangered;
+		transform:translateZ(2em);
+		transform-style:preserve-3d;
+		box-shadow:inset 0 0 2em;
+	}
+
+	.side_inner:before,.side_inner:after {
+		position:absolute;
+		display:block;
+		content:'';
+		border-radius:inherit;
+		border:1px solid;
+		box-shadow:inset 0 0 2em,0 0 2em;
+		top:0;
+		left:0;
+		bottom:0;
+		right:0;
+		margin:auto;
+		box-sizing:border-box;
+	}
+
+	.side_inner:before {
+		width:2.5em;
+		height:2.5em;
+		color:crimson;
+		transform:translateZ(2em);
+	}
+
+	.side_inner:after {
+		width:1.5em;
+		height:1.5em;
+		color:purple;
+		transform:translateZ(4em);
+	}
+
+	@keyframes rotate {
+		to {
+			transform:rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+		}
+	}
+  </style>
+ </head>
+ <body>
+  <div class='container'>
+  	<div class='cub cub1'>
+		<div class='side side-back'>
+			<div class='side_inner'></div>
+		</div>
+		<div class='side side-front'>
+			<div class='side_inner'></div>
+		</div>
+		<div class='side side-left'>
+			<div class='side_inner'></div>
+		</div>
+		<div class='side side-right'>
+			<div class='side_inner'></div>
+		</div>
+		<div class='side side-top'>
+			<div class='side_inner'></div>
+		</div>
+		<div class='side side-bottom'>
+			<div class='side_inner'></div>
+		</div>
+	</div>
+
+
+	<div class='cub cub2'>
+		<div class='side side-back'>
+			<div class='side_inner'></div>
+		</div>
+		<div class='side side-front'>
+			<div class='side_inner'></div>
+		</div>
+		<div class='side side-left'>
+			<div class='side_inner'></div>
+		</div>
+		<div class='side side-right'>
+			<div class='side_inner'></div>
+		</div>
+		<div class='side side-top'>
+			<div class='side_inner'></div>
+		</div>
+		<div class='side side-bottom'>
+			<div class='side_inner'></div>
+		</div>
+	</div>
+
+	<div class='cub cub3'>
+		<div class='side side-back'>
+			<div class='side_inner'></div>
+		</div>
+		<div class='side side-front'>
+			<div class='side_inner'></div>
+		</div>
+		<div class='side side-left'>
+			<div class='side_inner'></div>
+		</div>
+		<div class='side side-right'>
+			<div class='side_inner'></div>
+		</div>
+		<div class='side side-top'>
+			<div class='side_inner'></div>
+		</div>
+		<div class='side side-bottom'>
+			<div class='side_inner'></div>
+		</div>
+	</div>
+	
+  </div>
+ </body>
+</html>

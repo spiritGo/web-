@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style>
+	html,body {
+		width:100%;
+		height:100%;
+	}
+
+	.box {
+		width:300px;
+		height:300px;
+		top:50%;
+		left:50%;
+		margin-top:-150px;
+		margin-left:-150px;
+		position:relative;
+		animation:amin_rotate 0.01s infinite;
+	}
+  
+  	.box div:nth-child(-n+4) {
+		width:100px;
+		height:100px;
+		background-color:red;
+		border-radius:50px;
+		position:absolute;
+	}
+
+	.box div:last-child {
+		width:100px;
+		height:100px;
+		background-color:red;
+		position:absolute;
+	}
+
+	.box div:last-child {
+		top:100px;
+		right:100px;
+	}
+
+	.box div:nth-child(1) {
+		right:0;	
+	}
+
+	.box div:nth-child(2) {
+		right:0;
+		bottom:0px;
+	}
+
+	.box div:nth-child(3) {
+		left:0;
+		bottom:0px;
+	}
+
+	@keyframes amin_rotate {
+		10% {
+			transform:rotate(36deg);
+		}
+
+		20% {
+			transform:rotate(72deg);
+		}
+
+		30% {
+			transform:rotate(108deg);
+		}
+
+		40% {
+			transform:rotate(144deg);
+		}
+
+		50% {
+			transform:rotate(180deg);
+		}
+
+		60% {
+			transform:rotate(216deg);
+		}
+
+		70% {
+			transform:rotate(252deg);
+		}
+
+		80% {
+			transform:rotate(288deg);
+		}
+
+		90% {
+			transform:rotate(324deg);
+		}
+
+		100% {
+			transform:rotate(360deg);
+		}
+	}
+  </style>
+ </head>
+ <body>
+	<div class='box'>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+	</div>
+ </body>
+</html>

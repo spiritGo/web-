@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style>
+	.container {
+		text-align:center;
+	}
+
+	.head {
+		margin-left:-580px;
+	}
+
+	table {
+		text-align:left;
+	}
+
+	.container span {
+		font-size:42px;
+	}
+
+	table tr:nth-child(9) td {
+		text-align:right;
+	}
+
+	table tr:nth-child(9) span {
+		font-size:16px;
+		background-color:lightblue;
+		display:inline-block;
+		padding:6px;
+		margin:6px;
+	}
+
+	table tr:nth-child(2) td {
+		padding-right:50px;
+	}
+	.p1 a {
+		position:relative;
+		margin:0 8px;
+	}
+
+	.p1 a:nth-child(-n+4):after {
+		content:"|";
+		position:absolute;
+		right:-12px;
+		color:black;
+	}
+
+	table tr:nth-child(6) {
+		text-align:center;.p1 a:nth-child(-n+4)
+	}
+  </style>
+ </head>
+ <body>
+  <div class='container'>
+	<div class='head'>
+		<img src='images/jd_logo.PNG'/>
+		<span>欢迎登陆</span>
+	</div>
+
+	<table border='1px' style="border-collapse:collapse;" align='center'>
+		<tr>
+			<td rowspan='8'>
+				<img src='images/login.png'/>
+			</td>
+			<td>用户名/邮箱：</td>
+		</tr>
+		<tr>
+			<td>
+				<input type='email' placeholder='mary@163.com'/>
+			</td>
+		</tr>
+		<tr>
+			<td>密码：</td>
+		</tr>
+		<tr>
+			<td>
+				<input type='password' placeholder='请输入密码'/>
+			</td> 
+		</tr>
+		<tr>
+			<td>
+				<input type='checkbox' id='autologin' /><label for='autologin'>自动登陆</label>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<input type='submit' value='登陆'/>
+				<input type='reset' value='重填'/>
+			</td>
+		</tr>
+		<tr>
+			<td>使用京东合作账号登陆</td>
+		</tr>
+		<tr>
+			<td>
+				<input type='radio' name='logintype' id='QQ'/><label for='QQ'>QQ</label>
+				<input type='radio' name='logintype' id='jd'/><label for='jd'>京东钱包</label>
+			</td>
+		</tr>
+		<tr>
+			<td colspan='2'>
+				<span>免费注册</span>
+			</td>
+		</tr>
+	</table>
+	<p class='p1'>
+		<a href='#'>关于我们</a>
+		<a href='#'>联系我们</a>
+		<a href='#'>人才招聘</a>
+		<a href='#'>商家入驻</a>
+		<a href='#'>广告服务</a>
+	</p>
+  <div>
+ </body>
+</html>

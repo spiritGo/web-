@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style>
+	ul,li,span,img,html,body {
+		list-style:none;
+		margin:0;
+		padding:0;
+	}
+
+	ul {
+		width:200px;
+	}
+
+	ul>li>span {
+		width:200px;
+		height:50px;
+		display:block;
+		background-color:red;
+	}
+
+	ul>li>img {
+		height:300px;
+		width:570px;
+		position:relative;
+		left:-370px;
+		display:none;
+	}
+  </style>
+ </head>
+ <body>
+ 	<ul>
+		<li>
+			<span></span>
+			<img src="http://pic197.nipic.com/pic/20181216/24787180_234644903089_4.jpg"/>
+		</li>
+		<li>
+			<span></span>
+			<img src="http://pic175.nipic.com/pic/20180804/25839194_183857416000_4.jpg"/>
+		</li>
+		<li>
+			<span></span>
+			<img src="http://pic184.nipic.com/pic/20181005/26594207_134708278000_4.jpg"/>
+		</li>
+		<li>
+			<span></span>
+			<img src="http://pic174.nipic.com/pic/20180728/27456804_155426689486_4.jpg"/>
+		</li>
+		<li>
+			<span></span>
+			<img src="http://pic174.nipic.com/pic/20180724/27456804_164340890566_4.jpg"/>
+		</li>
+		<li>
+			<span></span>
+			<img src="http://pic174.nipic.com/pic/20180728/27456804_155701324432_4.jpg"/>
+		</li>
+	</ul>
+ </body>
+
+ <script src='jquery-3.2.1.js'></script>
+ <script>
+	/*var imgs = document.getElementsByTagName("img");
+	
+	for(var i=0;i< imgs.length ;i++){
+		imgs[i].style.left = 80*i+"px";
+		imgs[i].style.width = 80+"px";
+	}*/
+
+	/**$("img").mouseover(function(){
+		$(this).width(570);
+	}).mouseout(function(){
+		$(this).width(80);
+	});*/
+	
+	$(function(){
+		$("ul>li>span").mouseover(function(){
+			$(this).next().stop().slideDown().animate({left:0})
+			.parent().siblings().find("img").stop().slideUp().animate({left:-370});
+			//$(this).next().stop().animate({"display":"block"});
+		});
+
+		$("ul").mouseleave(function(){
+			$("ul>li>img").stop().slideUp();
+		});
+	})
+	
+ </script>
+</html>
