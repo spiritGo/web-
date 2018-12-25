@@ -1,0 +1,453 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style>
+	html,body {
+		width:100%;
+		height:100%;
+	}
+
+	html,body,p,ul,li,a,span,div {
+		margin:0;
+		padding:0;
+		font-family:"微软雅黑";
+	}
+
+
+
+	a {
+		text-decoration:none;
+	}
+
+	.nav {
+		border-bottom:1px solid #e5e5e5;
+		height:32px;
+		line-height:32px;
+		width:1920px;
+		font-size:13px;
+		color:grey;
+		/* position:relative; */
+	}
+
+	.login {
+		display:inline-block;
+		/* margin-left:200px; */
+	}
+
+	.login * {
+		margin:0 10px;
+	}
+
+	.nav a {
+		color:grey;
+	}
+
+	.nav a:hover {
+		color:red;
+	}
+
+	.nav >.nav-inner ul {
+		list-style:none;
+	}
+
+	.nav >.nav-inner ul > li {
+		position:relative;
+		float:left;
+		padding-right:14px;
+		margin-right:20px;
+	}
+
+	.nav >.nav-inner ul > li > b {
+		width:0px;
+		height:0px;
+		border-style:solid;
+		border-color:#bbb transparent transparent;
+		border-width:3px;
+		position:absolute;
+		top:15px;
+		right:6px;
+		
+	}
+
+	.nav >.nav-inner ul > li:hover b {
+		transform-origin:3px 2px;
+		animation:b-rotate 500ms linear forwards;
+	}
+
+	.nav >.nav-inner ul {
+		position:absolute;
+		top:0px;
+		right:0px;
+		padding:0 50px;
+	}
+
+	.clearfix:after {
+		content:"";
+		height:0;
+		visibility:hidden;
+		clear:both;
+		display:block;
+	}
+
+	.clearfix {
+		zoom:1;
+	}
+
+	@keyframes b-rotate {
+		to {
+			transform:rotate(-180deg);
+		}
+	}
+
+	#header >.header-extra img {
+		width:240px;
+		height:130px;
+		vertical-align:middle;
+
+	}
+
+	#header .header-extra,.nav .nav-inner,.inner-con2,.j_bigBanner,.module-body {
+		position:relative;
+		width:1230px;
+		margin:0 auto;
+	}
+
+	#mallSearch {
+		display:inline-block;
+	}
+
+	#mallSearch {
+		margin-left:100px;
+		overflow:hidden;
+		height:106px;
+		vertical-align:text-top;
+	}
+
+	#mallSearch .mallSearch .mallSearch-form {
+		width:625px;
+		height:40px;
+		border:2px red solid;
+		line-height:36px;
+		position:relative;
+	}
+
+	#mallSearch input {
+		width:491px;
+		height:36px;
+		outline:none;
+		border:none;
+		box-sizing:border-box;
+		margin:0 5px;
+		font-size:16px;
+	}
+
+	#mallSearch button {
+		width:124px;
+		height:40px;
+		border:none;
+		outline:none;
+		position:absolute;
+		top:0;
+		background-color:red;
+		color:white;
+		font-size:18px;
+		letter-spacing:5px;
+		font-weight:700px;
+		cursor:pointer;
+		
+	}
+
+	#mallSearch .hot-query {
+		height:28px;
+		list-style:none;
+		line-height:28px;
+		padding-top:8px;
+		margin-left:-3px;
+	}
+
+	#mallSearch .hot-query li {
+		float:left;
+		padding:0 10px;
+		font-size:14px;
+		border-left:1px solid #ccc;
+		line-height:1.1;
+	}
+
+	#mallSearch .hot-query li > a {
+		color:#999;
+	}
+
+	.inner-con1 .inner-con2 {
+		height:36px;
+		line-height:36px;
+	}
+
+	.inner-con1 .inner-con2 span {
+		width:200px;
+		height:36px;
+		background-color:red;
+		display:block;
+	}
+
+	.inner-con1 .inner-con2 img {
+		width:100px;
+		height:30px;
+		vertical-align:middle;
+	}
+
+	.inner-con1 .inner-con2 a {
+		vertical-align:top;
+		font-size:16px;
+		color:#333;
+		font-weight:500;
+		cursor:pointer;
+	}
+
+	.inner-con1 .inner-con2 a:hover {
+		color:red;
+	}
+
+	.inner-con2 > * {
+		float:left;
+		margin:0 10px;
+
+	}
+
+	.inner-con2 span i {
+		font-style:normal;
+		font-weight:700;
+		font-size:16px;
+		color:white;
+		margin-left:8px;
+	}
+
+	.inner-con1 {
+		border-style:solid;
+		border-width:0 0 1.5px;
+		border-color:#ff0036;
+	}
+
+	.banner-con {
+		background:url(http://img.alicdn.com/imgextra/i4/26/O1CN01IQKvvm1C3wmichcnp_!!26-0-luban.jpg_q100.jpg_.webp) center center no-repeat;
+		width:100%;
+		height:500px;
+		/* background-size:80%; */
+		position:relative;
+	}
+
+	.j_bigBanner ul {
+		width:200px;
+		height:500px;
+		position:absolute;
+		background-color:#0000008c;
+		list-style:none;
+		margin:0 10px;
+	}
+	
+	.j_bigBanner ul li {
+		color:white;
+		box-sizing:border-box;
+		padding:3px 10px;
+	}
+
+	.j_bigBanner ul li:hover {
+		background-color:white;
+		
+	}
+
+	.j_bigBanner ul li:hover a{
+		color:black;
+	}
+
+	.j_bigBanner ul a {
+		color:white;
+		font-size:14px;
+		padding:0 1px;
+	}
+
+	.module-body {
+		margin-top:20px;
+	}
+
+	.module-body .module-img1 {
+		float:left;
+		margin-right:7px;
+		position:relative;
+
+	}
+
+	.module-body .module-img1:hover {
+		opacity:.8;
+	}
+
+	.module-body .module-img1 div {
+		width:234px;
+		height:55px;
+		line-height:54px;
+
+	}
+
+	.module-body .more {
+		width: 42px;
+		height: 54px;
+		display: inline-block;
+		background: url(http://img.alicdn.com/tfs/TB1B7RoaMMPMeJjy1XcXXXpppXa-36-36.png) right center no-repeat;
+		background-size: 18px 18px;
+		position: absolute;
+		right: 0px;
+		top: 0px;
+		font-size: 16px;
+		padding-right: 14px;
+		color: #999;
+
+	}
+
+	.module-body .module-img1 img {
+		width:234px;
+	}
+
+	.module-body .module-img1 b {
+		font-size:20px;
+		margin-right:8px;
+	}
+
+	.module-body .module-img1 em {
+		font-style:normal;
+		font-size:16px;
+		font-weight:700;
+		
+	}
+
+	.module-body .module-img2 img,.module-body .module-img2{
+		width:485px;
+		
+	}
+
+  </style>
+ </head>
+ <body>
+  <div class="container">
+	<div class='nav'>
+		<div class='nav-inner'>
+			<p class='login'>
+			<span>瞄，欢迎来到天猫</span>
+			<a href="#">请登录</a>
+			<a href="#">免费注册</a>
+			</p>
+
+			<ul>
+				<li><a href="#">我的淘宝</a><b></b></li>
+				<li><a href="#"><i class='mui-global-iconfont'></i>购物车0件</a></li>
+				<li><a href="#">收藏夹</a><b></b></li>
+				<li><a href="#">手机版</a></li>
+				<li><a href="#">淘宝网</a></li>
+				<li><a href="#">商家支持</a><b></b></li>
+				<li><a href="#">网站导航</a><b></b></li>
+			</ul>
+		</div>
+	</div>
+	<div id="header">
+		<div class='header-extra'>
+			<img src="https://img.alicdn.com/tfs/TB1MaLKRXXXXXaWXFXXXXXXXXXX-480-260.png"/>
+
+			<div id='mallSearch'>
+				<div class='mallSearch'>
+					<form class='mallSearch-form'>
+						<input type='text'/>
+						<button>搜索</button>
+					</form>
+				</div>
+				<ul class='hot-query'>
+					<li><a href="#">针织衫</a></li>
+					<li><a href="#">连衣裙</a></li>
+					<li><a href="#">四件套</a></li>
+					<li><a href="#">摄像头</a></li>
+					<li><a href="#">客厅灯</a></li>
+					<li><a href="#">口红</a></li>
+					<li><a href="#">手机</a></li>
+					<li><a href="#">运动鞋</a></li>
+					<li><a href="#">牛奶</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class='inner-con1'>
+		<div class='inner-con2 clearfix'>
+			<span><i>商品分类</i></span>
+			<a><img src='https://img.alicdn.com/tfs/TB1ztBlaMMPMeJjy1XbXXcwxVXa-200-60.png'></a>
+			<a><img src='https://img.alicdn.com/tfs/TB1t5ObaBxRMKJjy0FdXXaifFXa-200-60.png'></a>
+			<a>天猫会员</a>
+			<a>电器城</a>
+			<a>喵鲜生</a>
+			<a>医药馆</a>
+			<a>营业厅</a>
+			<a>魅力惠</a>
+			<a>飞猪旅行</a>
+		</div>
+	</div>
+
+	<div class="banner-con">
+		<div class="j_bigBanner">
+			<ul>
+				<li><a href="#">女装</a>/<a href="#">内衣</a></li>
+				<li><a href="#">男装</a>/<a href="#">运动户外</a></li>
+				<li><a href="#">女鞋</a>/<a href="#">男鞋</a>/<a href="#">箱包</a></li>
+				<li><a href="#">美妆</a>/<a href="#">个人护理</a></li>
+				<li><a href="#">腕表</a>/<a href="#">眼镜</a>/<a href="#">珠宝饰品</a></li>
+				<li><a href="#">手机</a>/<a href="#">数码</a>/<a href="#">电脑办公</a></li>
+				<li><a href="#">母婴玩具</a></li>
+				<li><a href="#">零食</a>/<a href="#">茶酒</a>/<a href="#">进口食品</a></li>
+				<li><a href="#">生鲜水果</a></li>
+				<li><a href="#">大家电</a>/<a href="#">生活电器</a></li>
+				<li><a href="#">家具建材</a></li>
+				<li><a href="#">汽车</a>/<a href="#">配件</a>/<a href="#">用品</a></li>
+				<li><a href="#">家纺</a>/<a href="#">家饰</a>/<a href="#">鲜花</a></li>
+				<li><a href="#">医药保健</a></li>
+				<li><a href="#">厨具</a>/<a href="#">收纳</a>/<a href="#">宠物</a></li>
+				<li><a href="#">图书音像</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="module-body clearfix">
+		<div class='module-img1'>
+			<div>
+				<b>品牌闪购</b><em>BRAND SALE</em><a class='more' href="#"></a>
+			</div>
+			<img src="https://img.alicdn.com/tfs/TB1Z_NRuhGYBuNjy0FnXXX5lpXa-468-644.jpg_320x5000q100.jpg_.webp"/>
+		</div>
+
+		<div class='module-img1 module-img2'>
+			<div>
+				<b>聚名品</b><em>LUXURY CHANNEL</em><a class='more' href="#">更多</a>
+			</div>
+			<img src="https://img.alicdn.com/tfs/TB1ZkoLukCWBuNjy0FaXXXUlXXa-966-644.jpg_490x490q100.jpg_.webp"/>
+		</div>
+
+		<div class='module-img1 module-img2'>
+			<div>
+				<b>品牌活动</b><em>BRAND ACTIVITY</em><a class='more' href="#">更多</a>
+			</div>
+			<img src="https://img.alicdn.com/tps/i4/TB1TZXlxhnaK1RjSZFtSuvC2VXa.jpg_490x490q100.jpg_.webp"/>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+ </body>
+</html>

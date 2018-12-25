@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+
+  <style>
+	div {
+		width:200px;
+		height:50px;
+		/* background-color:red; */
+		position:relative;
+		word-wrap:break-word;
+		overflow:hidden;
+		float:left;
+		/* display:none; */
+	}
+
+	.on:after {
+		content:"OK";
+		width:200px;
+		height:50px;
+		line-height:36px;
+		position:absolute;
+		left:0px;
+		top:0px;
+		text-align:center;
+		color:white;
+		opacity:.5;
+		background-color:red;
+		/* display:none; */
+		z-index:100;
+
+		
+	}
+
+	.off:before,.off:after {
+		display:none;
+	}
+
+	.on:before {
+		width:80px;
+		height:20px;
+		content:"进入";
+		font-size:12px;
+		color:white;
+		bottom:2px;
+		position:absolute;
+		border-radius:6px;
+		background-color:black;
+		left:60px;
+		text-align:center;
+		line-height:20px;
+		/* opacity:.5; */
+		/* display:none; */
+		z-index:200;
+
+	}
+  </style>
+ </head>
+ <body>
+  <!-- <div class='on'>affsdafasdfsdfdaffasdfafadsfsadfsdf</div> -->
+
+  <script>
+	for(var i=0;i<20;i++){
+		var div = document.createElement("div");
+		div.innerText = "affsdafasdfsdfdaffasdfafadsfsadfsdf";
+		document.getElementsByTagName("body")[0].appendChild(div);
+
+		div.onmouseover =function(){
+			this.className = "on";
+		}
+
+		div.onmouseout =function(){
+			this.className = "on off";
+		}
+	}
+
+
+
+
+  </script>
+ </body>
+</html>
